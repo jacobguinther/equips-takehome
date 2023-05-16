@@ -1,0 +1,16 @@
+service: fdic
+provider:
+  name: aws
+  runtime: nodejs16.x
+  region: us-east-1
+  httpApi:
+    cors: true
+functions:
+  graphql:
+    handler: src/server.graphqlHandler
+    events:
+      - httpApi:
+          path: /institutions
+          method: POST
+plugins:
+  - serverless-plugin-typescript

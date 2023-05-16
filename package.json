@@ -1,0 +1,12 @@
+{
+  "dependencies": {
+    "@apollo/server": "^4.7.1",
+    "@as-integrations/aws-lambda": "^2.0.1",
+    "axios": "^1.4.0",
+    "graphql": "^16.6.0"
+  },
+  "devDependencies": {
+    "serverless-plugin-typescript": "^2.1.4",
+    "typescript": "^5.0.4"
+  }
+}
